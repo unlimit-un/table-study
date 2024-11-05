@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>ตารางเรียน</title>
+</head>
+<body>
+   
+    <div class="bg-dark min-vh-100">
+        <div class="container py-5">
+            <div class="table-responsive">
+                <table class="table table-striped table-bordered table-secondary text-center">
+                    <thead class="table-secondary">
+                        <tr>
+                            <th></th>
+                            <th>8.00</th>
+                            <th>9.00</th>
+                            <th>10.00</th>
+                            <th>11.00</th>
+                            <th>12.00</th>
+                            <th>13.00</th>
+                            <th>14.00</th>
+                            <th>15.00</th>
+                            <th>16.00</th>
+                            <th>17.00</th>
+                            <th>18.00</th>
+                            <th>19.00</th>
+                            <th>20.00</th>
+                            <th>21.00</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>จันทร์</th>
+                            <td id="mon-1"></td>
+                            <td id="mon-2"></td>
+                            <td id="mon-3"></td>
+                            <td id="mon-4"></td>
+                            <td id="mon-5"></td>
+                            <td id="mon-6"></td>
+                            <td id="mon-7"></td>
+                            <td id="mon-8"></td>
+                            <td id="mon-9"></td>
+                            <td id="mon-10"></td>
+                            <td id="mon-11"></td>
+                            <td id="mon-12"></td>
+                            <td id="mon-13"></td>
+                            <td id="mon-14"></td>
+                        </tr>
+                        <tr>
+                            <th>อังคาร</th>
+                            <td id="tus-1"></td>
+                            <td id="tus-2"></td>
+                            <td id="tus-3"></td>
+                            <td id="tus-4"></td>
+                            <td id="tus-5"></td>
+                            <td id="tus-6"></td>
+                            <td id="tus-7"></td>
+                            <td id="tus-8"></td>
+                            <td id="tus-9"></td>
+                            <td id="tus-10"></td>
+                            <td id="tus-11"></td>
+                            <td id="tus-12"></td>
+                            <td id="tus-13"></td>
+                            <td id="tus-14"></td>
+                        </tr>
+                        <tr>
+                            <th>พุธ</th>
+                            <td id="wed-1"></td>
+                            <td id="wed-2"></td>
+                            <td id="wed-3"></td>
+                            <td id="wed-4"></td>
+                            <td id="wed-5"></td>
+                            <td id="wed-6"></td>
+                            <td id="wed-7"></td>
+                            <td id="wed-8"></td>
+                            <td id="wed-9"></td>
+                            <td id="wed-10"></td>
+                            <td id="wed-11"></td>
+                            <td id="wed-12"></td>
+                            <td id="wed-13"></td>
+                            <td id="wed-14"></td>
+                        </tr>
+                        <tr>
+                            <th>พฤหัสบดี</th>
+                            <td id="thu-1"></td>
+                            <td id="thu-2"></td>
+                            <td id="thu-3"></td>
+                            <td id="thu-4"></td>
+                            <td id="thu-5"></td>
+                            <td id="thu-6"></td>
+                            <td id="thu-7"></td>
+                            <td id="thu-8"></td>
+                            <td id="thu-9"></td>
+                            <td id="thu-10"></td>
+                            <td id="thu-11"></td>
+                            <td id="thu-12"></td>
+                            <td id="thu-13"></td>
+                            <td id="thu-14"></td>
+                        </tr>
+                        <tr>
+                            <th>ศุกร์</th>
+                            <td id="fri-1"></td>
+                            <td id="fri-2"></td>
+                            <td id="fri-3"></td>
+                            <td id="fri-4"></td>
+                            <td id="fri-5"></td>
+                            <td id="fri-6"></td>
+                            <td id="fri-7"></td>
+                            <td id="fri-8"></td>
+                            <td id="fri-9"></td>
+                            <td id="fri-10"></td>
+                            <td id="fri-11"></td>
+                            <td id="fri-12"></td>
+                            <td id="fri-13"></td>
+                            <td id="fri-14"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="mt-4">
+                <div class="row row-cols-lg-2 row-cols-1">
+                    <div class="col-12 mt-3">
+                        <label for="subjectName" class="text-primary mb-2">ชื่อวิชา</label>
+                        <input type="text" id="subjectName" class="form-control" placeholder="ชื่อวิชา">
+                    </div>
+                    <div class="col-12 mt-3">
+                        <label for="subjectDate" class="text-primary mb-2">วันที่เรียน</label>
+                        <select  id="subjectDate" class="form-select"></select>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="timeStart" class="text-primary mb-2">เวลาที่เริ่มเรียน</label>
+                        <select  id="timeStart" class="form-select"></select>
+                    </div>
+                    <div class="col mt-3">
+                        <label for="timeEnd" class="text-primary mb-2">เวลาที่เรียนเสร็จ</label>
+                        <select  id="timeEnd" class="form-select"></select>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end">
+                    <button class="btn btn-outline-primary mt-3 w-25" onclick="saveSubject();">บันทึก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        let subjectUsed = [];
+        let arrTime = [
+                "8.00",
+                "9.00",
+                "10.00",
+                "11.00",
+                "12.00",
+                "13.00",
+                "14.00",
+                "15.00",
+                "16.00",
+                "17.00",
+                "18.00",
+                "19.00",
+                "20.00",
+                "21.00"
+            ];
+
+        (()=>{
+            let arrDate = [
+                "จันทร์",
+                "อังคาร",
+                "พุธ",
+                "พฤหัสบดี",
+                "ศุกร์"
+            ]
+
+            let timeStart = document.getElementById("timeStart");
+            let timeEnd = document.getElementById("timeEnd");
+            let subjectDate = document.getElementById("subjectDate");
+
+            arrTime.forEach((ele,i)=>{
+                timeStart.innerHTML += `<option value="${ele}">${ele}</option>`
+                timeEnd.innerHTML += `<option value="${ele}">${ele}</option>`
+            })
+
+            arrDate.forEach((ele,i)=>{
+                subjectDate.innerHTML += `<option value="${ele}">${ele}</option>`
+            })
+        })()
+
+        function saveSubject() {
+
+            let data = {
+                timeStart : document.getElementById("timeStart").value,
+                timeEnd : document.getElementById("timeEnd").value,
+                subjectDate : document.getElementById("subjectDate").value,
+                subjectName : document.getElementById("subjectName").value
+            }
+
+            // console.log(!data?.timeStart);
+            if (!data?.timeStart || !data?.timeEnd || !data?.subjectDate || !data?.subjectName){
+                alert('กรุณากรอกข้อมูลให้ครบ'); 
+                return false;
+            }
+            if (+data.timeEnd - +data.timeStart === 0) {
+                alert('เลือกเวลาห่างกันอย่างน้อย 1 ชั่วโมง'); 
+                return false;
+            }
+            if (+data.timeEnd - +data.timeStart < 0 ) {
+                alert('เวลาที่เริ่มเรียนต้องน้อยกว่าเวลาที่เรียนเสร็จ'); 
+                return false;
+            }
+            
+            let timeSubject = +data.timeEnd - +data.timeStart;
+            let tbody = document.querySelector('tbody');
+            let trList = tbody.querySelectorAll('tr');
+
+            if (data.subjectDate === "จันทร์") {
+
+                let index = arrTime.indexOf(data.timeStart)+1;
+
+                if (subjectUsed.indexOf('mon-'+index) < 0) {
+                    
+                    document.querySelector('#mon-'+index).innerHTML = `<a href="#" onclick="removeData(this)">${data.subjectName} (กดเพื่อลบออก)</a>`
+                    document.querySelector('#mon-'+index).setAttribute('colspan',timeSubject);
+
+                    subjectUsed.push('mon-'+index)
+                    for (let i = 1; i < timeSubject; i++) {
+    
+                        let tempIndex = i+index;
+                        document.querySelector('#mon-'+tempIndex).remove();
+                        subjectUsed.push('mon-'+tempIndex)
+
+                    }
+                }else{
+                    alert('ไม่สามารถใช้เวลานี้ได้(ตารางชนกัน)');
+                    return false;
+                }
+                
+            }else if(data.subjectDate === "อังคาร"){
+
+                let index = arrTime.indexOf(data.timeStart)+1;
+
+                if (subjectUsed.indexOf('tus-'+index) < 0) {
+                    
+                    document.querySelector('#tus-'+index).innerHTML = `<a href="#" onclick="removeData(this)">${data.subjectName} (กดเพื่อลบออก)</a>`
+                    document.querySelector('#tus-'+index).setAttribute('colspan',timeSubject);
+
+                    subjectUsed.push('tus-'+index)
+                    for (let i = 1; i < timeSubject; i++) {
+    
+                        let tempIndex = i+index;
+                        document.querySelector('#tus-'+tempIndex).remove();
+                        subjectUsed.push('tus-'+tempIndex)
+
+                    }
+                }else{
+                    alert('ไม่สามารถใช้เวลานี้ได้(ตารางชนกัน)');
+                    return false;
+                }
+
+            }else if(data.subjectDate === "พุธ"){
+
+                let index = arrTime.indexOf(data.timeStart)+1;
+
+                if (subjectUsed.indexOf('wed-'+index) < 0) {
+                    
+                    document.querySelector('#wed-'+index).innerHTML = `<a href="#" onclick="removeData(this)">${data.subjectName} (กดเพื่อลบออก)</a>`
+                    document.querySelector('#wed-'+index).setAttribute('colspan',timeSubject);
+
+                    subjectUsed.push('wed-'+index)
+                    for (let i = 1; i < timeSubject; i++) {
+    
+                        let tempIndex = i+index;
+                        document.querySelector('#wed-'+tempIndex).remove();
+                        subjectUsed.push('wed-'+tempIndex)
+
+                    }
+                }else{
+                    alert('ไม่สามารถใช้เวลานี้ได้(ตารางชนกัน)');
+                    return false;
+                }
+
+            }else if(data.subjectDate === "พฤหัสบดี"){
+
+                let index = arrTime.indexOf(data.timeStart)+1;
+
+                if (subjectUsed.indexOf('thu-'+index) < 0) {
+                    
+                    document.querySelector('#thu-'+index).innerHTML = `<a href="#" onclick="removeData(this)">${data.subjectName} (กดเพื่อลบออก)</a>`
+                    document.querySelector('#thu-'+index).setAttribute('colspan',timeSubject);
+
+                    subjectUsed.push('thu-'+index)
+                    for (let i = 1; i < timeSubject; i++) {
+    
+                        let tempIndex = i+index;
+                        document.querySelector('#thu-'+tempIndex).remove();
+                        subjectUsed.push('thu-'+tempIndex)
+
+                    }
+                }else{
+                    alert('ไม่สามารถใช้เวลานี้ได้(ตารางชนกัน)');
+                    return false;
+                }
+
+            }else if(data.subjectDate === "ศุกร์"){
+
+                let index = arrTime.indexOf(data.timeStart)+1;
+
+                if (subjectUsed.indexOf('fri-'+index) < 0) {
+                    
+                    document.querySelector('#fri-'+index).innerHTML = `<a href="#" onclick="removeData(this)">${data.subjectName} (กดเพื่อลบออก)</a>`
+                    document.querySelector('#fri-'+index).setAttribute('colspan',timeSubject);
+
+                    subjectUsed.push('fri-'+index)
+                    for (let i = 1; i < timeSubject; i++) {
+    
+                        let tempIndex = i+index;
+                        document.querySelector('#fri-'+tempIndex).remove();
+                        subjectUsed.push('fri-'+tempIndex)
+
+                    }
+                }else{
+                    alert('ไม่สามารถใช้เวลานี้ได้(ตารางชนกัน)');
+                    return false;
+                }
+
+            }
+
+            document.getElementById("timeStart").value = "8.00";
+            document.getElementById("timeEnd").value = "8.00";
+            document.getElementById("subjectDate").value = "จันทร์";
+            document.getElementById("subjectName").value = "";
+
+        }
+
+        function removeData(ele) {
+            console.log(subjectUsed);
+            let td = ele.parentElement;
+            let timeSubject = +td.getAttribute('colspan');
+            td.removeAttribute('colspan')
+            let [date, index] = td.id.split('-')
+            td.innerHTML = "";
+            subjectUsed = subjectUsed.filter(ele=>{
+
+                if (ele !== td.id) {
+                    return ele
+                }
+
+            })
+            index = +index
+            let newId = +index + 1
+            for (let i = newId; i < timeSubject+newId-1; i++) {
+                console.log(i);
+                let newTd = document.createElement('td');
+                newTd.setAttribute('id',`${date}-${i}`)
+                subjectUsed = subjectUsed.filter(ele=>{
+
+                    if (ele !== `${date}-${i}`) {
+                        return ele
+                    }
+
+                })
+                td.parentElement.insertBefore( newTd, document.getElementById(`${date}-${timeSubject+index}`) )
+            }
+
+        }
+    </script>
+</body>
+</html>
